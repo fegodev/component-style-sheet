@@ -1,9 +1,9 @@
-function _applyStylesheet ({ components, stylesheet, classPropName })
-{
+function _applyStyleSheet ({ components, styleSheet, classPropName }) {
+
 	if (!classPropName) classPropName = 'class';
-	const SELECTORS = stylesheet
+	const SELECTORS = styleSheet
 	const COMPONENTS = components
-	const CACHE = {}
+	const CACHE = {} // coming soon...
 	let StyledComponents = {}
 	let classIndex = {}
 
@@ -75,4 +75,4 @@ function _applyStylesheet ({ components, stylesheet, classPropName })
 	return StyledComponents;
 }
 
-export const applyStylesheet = _applyStylesheet;
+export const applyStyleSheet = _applyStyleSheet;

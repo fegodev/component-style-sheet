@@ -5,20 +5,20 @@
 
 Create the import file
 
-./some/location/Stylable.js
+./some/location/CSS.js
 
 ```js
 // ...
 import { Text, View, ScrollView, StyleSheet } from 'react-native';
-import { applyStylesheet } from 'component-style-sheet';
+import { applyStyleSheet } from 'component-style-sheet';
 
-const Stylable = applyStylesheet({
+const CSS = applyStyleSheet({
 	components: {
 		View,
 		ScrollView,
 		Text
 	},
-	stylesheet: StyleSheet.create({
+	styleSheet: StyleSheet.create({
 		'Text': { // Set the default style
 			color: 'blue',
 			fontSize: 18,
@@ -43,9 +43,9 @@ const Stylable = applyStylesheet({
 
 module.exports = {
 	// Export your stylable components
-	...Stylable,
+	...CSS,
 	// Pre-styled components are possible too:
-	H1: props => (<Stylable.Text class={'h1 ' + props.class} />)
+	H1: props => (<CSS.Text class={'h1 ' + props.class} />)
 }
 ```
 
@@ -55,7 +55,7 @@ Import stylable components anywhere in your project:
 
 ```js
 // ...
-import { View, Text } from './some/location/Stylable.js';
+import { View, Text } from './some/location/CSS.js';
 
 export default MyComponent = (props) => {
 	return(
