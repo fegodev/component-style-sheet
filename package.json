@@ -1,0 +1,27 @@
+{
+  "name": "component-style-sheet",
+  "version": "0.0.1-pre-alpha",
+  "description": "Export components you wish to style with classes, just like you know from CSS.",
+  "main": "./src/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fegodev/component-style-sheet.git"
+  },
+  "keywords": [
+    "sheet",
+    "style",
+    "component",
+    "node",
+    "javascript"
+  ],
+  "author": "fegodev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fegodev/component-style-sheet/issues"
+  },
+  "homepage": "https://github.com/fegodev/component-style-sheet/"
+}
